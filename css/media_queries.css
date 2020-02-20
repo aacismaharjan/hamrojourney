@@ -1,0 +1,152 @@
+@media (max-width: 1050px){
+	/*Container*/
+	.container{
+		width: 95%;
+		padding:0 20px;
+		overflow: hidden;
+	}
+
+	/*Top Head*/
+	#top-head .row .location{
+		display: none;
+	}
+
+	#top-head .row{
+		height: 40px;
+		justify-content: center;
+	}
+
+	#top-head .row .col-3{
+		min-width: 33.33%;
+	}
+
+	/*Main Head*/
+	#main-head{
+		padding:0;
+		text-align: center;
+	}
+
+	#main-head .row{
+		height:100px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#main-head i{
+		margin-right: 5px;
+	}
+
+	#main-head .col-4{
+		min-width: 100%;
+	}
+
+	#main-head .col-6{
+		min-width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#main-head #main-nav{
+		text-align: center;
+	}
+
+	#main-head #main-nav li a{
+		padding:5px 15px;
+	}
+
+	#main-head .col-2{
+		display: none;
+	}
+
+	/*Banner*/
+	#banner .container{
+		height: 400px;
+	}
+
+	#banner .content{
+		padding:50px 0;
+	}
+
+	#banner .content h2{
+		font-size: 2.5rem;
+	}
+
+	#banner .content .row .col-8{
+		min-width: 100%;
+	}
+
+	/*Stories*/
+	#stories .row .col-5{
+		min-width: 100%;
+		order: 1;
+	}
+
+	#stories .row .col-7{
+		order:2;
+		min-width: 100%;
+	}
+
+	/*Gallery*/
+	#gallery .row .col-3{
+		min-width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#gallery .row .col-3 .widget{
+		max-width:250px;
+	}
+
+
+	/*Contact*/
+	#contact .col-6{
+		min-width: 100%;
+	}
+
+	#contact form{
+		padding:50px 0 0 0;
+	}
+}
+
+
+@media (max-width: 700px){
+	.container{
+		width: 95%;
+		padding:0 10px;
+		overflow: hidden;
+	}
+
+	#top-head .row .phone{
+		display: none;
+	}
+
+	#top-head .row .col-3{
+		min-width: 50%;
+	}
+
+	#gallery .row .col-3{
+		min-width: 100%;
+	}
+}
+
+@media (max-width: 500px){
+	#top-head .row .fee{
+		display: none;
+	}
+
+	#top-head .row .col-3{
+		min-width: 100%;
+	}
+
+	#top-head .row .col-3.clock{
+		text-align: center!important;
+	}
+
+	#main-head #main-nav li a{
+		padding:5px 5px;
+	}
+}
+
+
+
