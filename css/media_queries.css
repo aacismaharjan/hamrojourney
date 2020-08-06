@@ -27,6 +27,8 @@
 	}
 
 	#main-head .row{
+		grid-gap: 0px;
+		padding: 10px;
 		height:100px;
 		align-items: center;
 		justify-content: center;
@@ -110,12 +112,17 @@
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 800px){
 	.container{
 		width: 95%;
 		padding:0 10px;
 		overflow: hidden;
 	}
+
+	.row [class*="col-"]{
+		grid-column: span 12;
+	}
+	
 
 	#top-head .row .phone{
 		display: none;
@@ -128,11 +135,15 @@
 	#gallery .row .col-3{
 		min-width: 100%;
 	}
+	#top-head .row .fee{
+		display: none;
+	}
 }
 
 @media (max-width: 500px){
-	#top-head .row .fee{
-		display: none;
+
+	.row [class*="col-"]{
+		grid-column: span 12;
 	}
 
 	#top-head .row .col-3{
@@ -146,6 +157,12 @@
 	#main-head #main-nav li a{
 		padding:5px 5px;
 	}
+
+	#main-head .branding h2 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.5em;
+}
 }
 
 

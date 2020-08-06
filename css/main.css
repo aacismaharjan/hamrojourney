@@ -1,0 +1,416 @@
+/*Theme Color*/
+:root{
+	--white: #fffdfa;
+	--light: #517394;
+	--normal: #3c556e;
+	--dark: #29384d; /* rgba(41, 56, 77, 1); */
+	--red: #ff283f;
+}
+
+/*Global*/
+*{	
+	transition: 0.25s all;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	margin:0;
+	font:0.9em/1.5 'Open Sans', sans-serif;
+}
+
+a:hover{
+	color:var(--white);
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+li{
+	display: inline-block;
+	list-style: none;
+}
+
+/* Order */
+.order-2{
+	order: 2!important;
+}
+
+img{
+	vertical-align: middle;
+	width: 100%;
+}
+
+.container {
+	padding:0px 15px;
+	margin: auto;
+}
+
+.row {
+	display: grid;
+	grid-gap: 15px;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.col-1{grid-column: span 1;}
+.col-2{grid-column: span 2;}
+.col-3{grid-column: span 3;}
+.col-4{grid-column: span 4;}
+.col-5{grid-column: span 5;}
+.col-6{grid-column: span 6;}
+.col-7{grid-column: span 7;}
+.col-8{grid-column: span 8;}
+.col-9{grid-column: span 9;}
+.col-10{grid-column: span 10;}
+.col-11{grid-column: span 11;}
+.col-12{grid-column: span 12;}
+
+.container{
+	max-width: 1050px;
+}
+
+
+.row{
+	margin:0;
+}
+
+[class*="col-"]{
+	padding:0;
+}
+
+
+.highlight, .current a{
+	color:var(--red)!important;
+}
+
+.my-btn{
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	color:var(--white);
+	border:0;
+	padding:0.6em 1.25em;
+	font-weight: bold;
+	min-width: 120px;
+	cursor: pointer;
+	background:var(--red);
+	overflow: hidden;
+}
+
+
+.my-btn:hover{
+	color:var(--white);
+	filter:opacity(80%);
+}
+
+.btn-grp{
+	display: flex;
+	justify-content: center;
+}
+
+.my-btn-dark{
+	background:var(--dark);
+}
+
+section.block{
+	color:var(--light);
+	padding:50px 0;
+}
+
+section.block .section-title h2{
+	margin:0;
+	color:var(--normal);
+	padding-left: 10px;
+	text-transform: uppercase;
+	font-size:1.5rem;
+	font-weight: bold;
+	border-left:0.25em solid var(--red);
+}
+
+section.block .section-title{
+	margin-bottom: 30px;
+}
+
+input, textarea{
+	color:var(--dark);
+	width: 100%;
+	height: 40px;
+	padding-left: 10px;
+}
+
+.hide{
+	transition: 1s;
+	opacity: 0;
+}
+
+.show{
+	transition: 1s;
+	opacity:1;
+}
+
+.scroll-up{
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+
+.scroll-up .my-btn{
+	min-width: 0;
+	color:var(--white);
+	padding:10px 15px;
+}
+
+.scroll-up .my-btn:hover{
+	color:var(--white);
+}
+
+/*Top Header*/
+#top-head{
+	color:var(--white);
+	background:var(--red);
+}
+
+#top-head .row{
+	height:40px;
+	align-items: center;
+}
+
+#top-head span i{
+	margin-right:10px;
+}
+
+
+/*Main Header*/
+#main-head{
+	color:var(--white);
+	padding:10px 0;
+	background:var(--dark);
+}
+
+#main-head .row{
+	align-items: center;
+	height: 70px;
+}
+
+#main-head a{
+	color:var(--white);
+}
+
+#main-head i{
+	margin-right:8px!important;
+}
+
+#main-head #main-nav a{
+	text-transform: uppercase;
+	font-weight: bold;
+	padding:10px 20px;
+	transition: 0.5s;
+}
+
+#main-head #main-nav li:hover *{
+	color:var(--red);
+}
+
+#main-head .branding h2{
+	font-weight: bold;
+	margin:0;
+	font-size:2rem;
+}
+
+#main-head #main-nav{
+	text-align: right;
+}
+
+
+/*Banner*/
+#banner{
+	position: relative;
+	color:var(--white);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+}
+
+#banner .overlay{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:100%;
+	background:linear-gradient(90deg, rgba(41, 56, 77, 1), rgba(41, 56, 77, 0.9), rgba(41, 56, 77, 0.5));
+}
+
+#banner .container{
+	position: relative;
+	height: 500px;
+}
+
+#banner .content{
+	padding:100px 0;
+}
+
+#banner .content h2{
+	font-weight: bold;
+	margin:0;
+	font-size: 3rem;   
+	margin: 0 0 10px 0;
+}
+
+#banner .content p{
+	margin:0;
+	font-size: 1rem;
+	margin-bottom: 30px;
+}
+
+#banner.banner-home{background-image:url(../assets/patan.jpg);}
+#banner.banner-about{background-image:url(../assets/lumbini.jpg);}
+#banner.banner-gallery{background-image:url(../assets/pashupatinath.jpeg);}
+
+/*Packages*/
+#stories{
+
+}
+
+#stories .row{
+	color:var(--dark);
+	margin-bottom: 20px;
+	padding:15px;
+	background: rgba(41, 56, 77, 0.15);
+}
+
+#stories .content .img-cover img{
+	width: 100%;
+	height: 220px;
+	padding:10px;
+	object-fit: cover;
+}
+
+#stories .row p{
+	padding:10px;
+	text-align: justify;
+}
+
+
+/*Gallery*/
+#gallery{
+
+}
+
+#gallery .row{
+	margin:10px 0;
+}
+
+#gallery .row .widget{
+	color:var(--dark);
+	padding:10px;
+	text-align: center;
+}
+
+#gallery .row .img-cover{
+	position: relative;
+	clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+	padding:7px;
+	background:rgba(41, 56, 77, 0.3);
+	border:1px solid var(--normal);
+	overflow: hidden;
+}
+
+#gallery .row .img-cover img{
+	clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+	height: 240px;
+	object-fit: cover;
+}
+
+#gallery .btn-grp{
+	margin-top: 30px;
+}
+
+
+/*Interactivity*/
+#gallery .img-cover{
+	cursor: pointer;
+}
+
+#gallery .img-cover:hover img{
+	transform:scale(1.2) rotate(-5deg);
+	transition:0.5s;
+	overflow: hidden;
+}
+
+
+/*Contact*/
+#contact{
+
+}
+
+#contact .row iframe{
+	width: 100%;
+	height: 300px;
+}
+
+#contact form{
+	padding:0 0 0 50px;
+}
+
+#contact form>div{
+	margin-bottom: 5px;
+}
+
+#contact form label{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.75em;
+	margin:0;
+}
+
+#contact textarea{
+	padding-top: 10px;
+	resize: none;
+	height: 90px;
+}
+
+#contact .btn-grp{
+	justify-content: flex-start;
+}
+
+#contact .btn-grp .my-btn{
+	margin-right: 10px;
+}
+
+
+
+/*Footer*/
+footer#main-footer{
+	text-align: center;
+	color:var(--white);
+	background:var(--dark);
+}
+
+footer#main-footer .container{
+	padding: 1.5em 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+#main-footer a{
+  color: var(--white);
+}
+
+#main-footer h4, #main-footer h5{
+	margin:0;
+	font-weight: normal;
+	font-size:0.85rem;
+}
+
+#main-footer h4{
+	font-size: 1rem;
+}
